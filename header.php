@@ -63,23 +63,25 @@ All rights reserved.
                     $menu_items = wp_get_nav_menu_items($menu->term_id);
 
                     $menu_list = '<nav class="col-md-4 col-md-offset-4">';
+                    
+                    $current_uri = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
                     foreach ( (array) $menu_items as $key => $menu_item ) {
                         $title = $menu_item->title;
                         $url = $menu_item->url;
-                        $menu_list .= '<a href="' . $url . '">' . strtoupper($title) . '</a>';
+                        $selected = '';
+                        
+                        if($current_uri == $url) {
+                            $selected .= 'class="selected"';
+                        }
+                        
+                        $menu_list .= '<a href="' . $url . '" ' . $selected . ' >' . strtoupper($title) . '</a>';
                     }
                     $menu_list .= '</nav>';
                 }
                 echo $menu_list;
                 
 ?>
-                
-<!--                <nav class="col-md-4 col-md-offset-4">
-                    <a href="./about.html">ABOUT</a>
-                    <a href="http://gf-blog.com/">BLOG</a>
-                    <a href="./" class="selected">WORK</a>
-                </nav>-->
             </header>
             <div class="row page-divider-row">
                 <div class="col-md-12 page-divider"></div>
