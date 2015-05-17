@@ -21,10 +21,9 @@
         $p_title = $page->post_title;
         $p_thumb = wp_get_attachment_image_src(get_post_thumbnail_id($page->ID), 'full', true);
         
-        // TODO: add this once I've styled
-//        if(strtolower($p_title)  == 'about') {
-//            continue;
-//        }
+        if(strtolower($p_title)  == 'about') {
+            continue;
+        }
         
         // new row
         if($i % 3 == 0) {

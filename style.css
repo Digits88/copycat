@@ -1,11 +1,17 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : May 16, 2015, 4:48:26 PM
-    Author     : mike_newell
+Theme Name: Copycat
+Theme URI: https://github.com/newshorts/copycat
+Author: Mike Newell
+Author URI: http://iwearshorts.com/
+Description: A simple theme, small with only 3 pages. You will want to customize, but this will get you started.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, two-columns, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: copycat
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 body {
