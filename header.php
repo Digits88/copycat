@@ -54,11 +54,32 @@ All rights reserved.
                 <a href="/">
                     <h1 class="col-md-4">ERINN BUTULIS</h1>
                 </a>
-                <nav class="col-md-4 col-md-offset-4">
+                
+<?php
+                $menu_name = 'header-menu';
+                if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+                    $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+
+                    $menu_items = wp_get_nav_menu_items($menu->term_id);
+
+                    $menu_list = '<nav class="col-md-4 col-md-offset-4">';
+
+                    foreach ( (array) $menu_items as $key => $menu_item ) {
+                        $title = $menu_item->title;
+                        $url = $menu_item->url;
+                        $menu_list .= '<a href="' . $url . '">' . strtoupper($title) . '</a>';
+                    }
+                    $menu_list .= '</nav>';
+                }
+                echo $menu_list;
+                
+?>
+                
+<!--                <nav class="col-md-4 col-md-offset-4">
                     <a href="./about.html">ABOUT</a>
                     <a href="http://gf-blog.com/">BLOG</a>
                     <a href="./" class="selected">WORK</a>
-                </nav>
+                </nav>-->
             </header>
             <div class="row page-divider-row">
                 <div class="col-md-12 page-divider"></div>
