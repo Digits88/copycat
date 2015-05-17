@@ -5,7 +5,7 @@ All rights reserved.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title><?php echo get_bloginfo('name'); ?></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -52,7 +52,7 @@ All rights reserved.
             </div>
             <header class="row">
                 <a href="/">
-                    <h1 class="col-md-4">ERINN BUTULIS</h1>
+                    <h1 class="col-md-4"><?php echo strtoupper(get_bloginfo('name')); ?></h1>
                 </a>
                 
 <?php
