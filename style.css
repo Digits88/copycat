@@ -1,0 +1,168 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 16, 2015, 4:48:26 PM
+    Author     : mike_newell
+*/
+
+body {
+    font-family: "futura-pt";
+    color: #222;
+}
+
+img {
+    width: 100%;
+}
+
+.spacer {
+    height: 75px;
+}
+
+header h1 {
+    font-family: "futura-pt";
+    font-weight: 400;
+    letter-spacing: 0.0217391304347826em;
+    font-size: 46px;
+    font-style: normal;
+    line-height: 1.2em;
+    color: #222;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #999;
+    padding: 14.599999999999998px 0;
+    display: inline-block;
+    line-height: 26px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-style: normal;
+    position: relative;
+    float: right;
+    margin-right: 30px;
+}
+
+nav a.selected {
+    color: #111;
+}
+
+nav a:first-child {
+    margin-right: 0;
+}
+
+nav a:hover {
+    color: #111;
+    text-decoration: none;
+}
+
+.page-divider-row {
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.page-divider {
+    border-bottom: 1px solid #ddd;
+    /*margin: 0 15px;*/
+}
+
+.page {
+    padding: 50px 0;
+}
+
+.page p {
+    color: #777;
+}
+
+.page a {
+    text-decoration: none;
+}
+
+.page a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page h2 {
+    font-family: "futura-pt";
+    font-size: 18px;
+    line-height: 1.2em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+footer p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 15px 0;
+}
+
+footer nav {
+    margin-top: 16px;
+}
+
+footer nav a {
+    font-size: 18px;
+}
+
+/**
+    PAGE
+*/
+
+.single-content .gallery {
+    display: none;
+}
+
+.images-left img {
+    margin: 2em 0 .5em;
+}
+
+/**
+    INDEX
+*/
+
+.page .col-md-4 {
+    margin-top: 3%;
+}
+
+.project-image {
+    overflow: hidden;
+    max-height: 360px;
+    max-height: 360px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.project-image img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-title {
+    font-family: "proxima-nova";
+    font-size: 12px;
+    line-height: 1.6em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    color: #707070;
+}
