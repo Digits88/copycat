@@ -2,6 +2,8 @@
 <!--
 Copyright 2015 Mike Newell
 All rights reserved.
+
+Based on a theme here: http://avenue-demo.squarespace.com/#/alps-avenue/
 -->
 <html>
     <head>
