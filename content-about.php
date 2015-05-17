@@ -10,19 +10,20 @@
                 <div class="row">
                     <div class="col-md-5">
 <?php
-//    $gallery = get_post_gallery( get_the_ID(), false );
-    
-    $gallery = get_post_gallery_images( $post );
-    
+    $gallery = get_post_gallery( get_the_ID(), false );
+    $idsArr = explode(',', $gallery['ids']);
     $template = '';
     
-    if($gallery) {
-        foreach ($gallery as $src) {
-            $info = new SplFileInfo($src);
-            $ext = $info->getExtension();
-            $new = preg_replace('#-[0-9]([0-9])?([0-9])?[x][0-9]([0-9])?([0-9])?.#', '.', $src);
-            $template .=    '<img src="'.$new.'" />';
+    if($idsArr) {
+        foreach($idsArr as $key => $id) {
+            
+            $url = wp_get_attachment_url( $id );
+            $alt = '#';
+            $alt = get_post_meta($id, _wp_attachment_image_alt, true);
+            
+            $template .=    '<a href="' . $alt . '"><img src="'.$url.'" /></a>';
             $template .=    '<br />';
+            
         }
     }
     
